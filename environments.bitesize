@@ -3,7 +3,9 @@ environments:
   - name: dev
     namespace: spring-dev
     deployment:
-      method: rolling-upgrade
+      method: bluegreen
+      mode: manual
+      active: blue
     services:
       - name: spring-app
         external_url: sivatest.prsn.io
