@@ -5,7 +5,7 @@ environments:
     deployment:
       method: bluegreen
       mode: manual
-      active: green
+      active: blue
     services:
       - name: spring-app
         external_url: sivatest.prsn.io
