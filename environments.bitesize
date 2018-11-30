@@ -11,4 +11,4 @@ environments:
         external_url: sivatest.prsn.io
         port: 8080
         ssl: "false"
-        replicas: 2;l
+        replicas: 2
