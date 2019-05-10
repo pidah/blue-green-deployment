@@ -1,14 +1,16 @@
-project: spring
+project: nginx-tst
 environments:
   - name: dev
-    namespace: spring-dev
-    deployment:
-      method: bluegreen
-      mode: manual
-      active: blue
+    namespace: nginx-tst-dev
     services:
-      - name: spring-app
-        external_url: sivatest.prsn.io
-        port: 8080
-        ssl: "false"
+      - name: nginx-tst-app
+        application: nginx-green
+        version: 2.0.0
+        external_url: idc-api-us1-dev.glp.pearsondev.tech
+        port: 80
         replicas: 2
+        backend_port: 80
+        ssl: "false"
+        deployment:
+          method: bluegreen
+          active: blue
