@@ -4,13 +4,13 @@ environments:
     namespace: nginx-tst-dev
     services:
       - name: nginx-tst-app
-        application: nginx-green
-        version: 2.0.0
-        external_url: idc-api-us1-dev.glp.pearsondev.tech
+        application: nginx-blue
+        version: 1.0.0
+        external_url: nginx-tst-eu1-dev.bite.pearsondev.tech
         port: 80
         replicas: 2
         backend_port: 80
         ssl: "false"
         deployment:
           method: bluegreen
-          active: blue
+          active: green
