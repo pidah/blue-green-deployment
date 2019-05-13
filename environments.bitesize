@@ -15,4 +15,4 @@ environments:
         ssl: "false"
         deployment:
           method: bluegreen
-          active: blue
+          active: green
