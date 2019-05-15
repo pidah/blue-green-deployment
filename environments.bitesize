@@ -8,7 +8,7 @@ environments:
         version: 2.0.0
         external_url:
         - iie-web-us1-dev.bite.pearsondev.tech
-        - iie-web-us1-qa.bite.pearsondev.tech
+        - iie-web.dev-prsn.com
         port: 80
         replicas: 2
         backend_port: 80
