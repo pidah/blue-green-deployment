@@ -13,5 +13,5 @@ environments:
         backend_port: 80
         ssl: "false"
         deployment:
-          method: bluegreen
-          active: blue
+          method: rolling-upgrade
+#          active: blue
