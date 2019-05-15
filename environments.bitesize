@@ -6,8 +6,9 @@ environments:
       - name: nginx-tst-app
         application: nginx-green
         version: 2.0.0
-        external_url: nginx-tst-eu1-dev.bite.pearsondev.tech
-#        - service-nginx-tst-eu1-dev.bite.pearsondev.tech
+        external_url:
+        - nginx-tst-eu1-dev.bite.pearsondev.tech
+        - service-nginx-tst-eu1-dev.bite.pearsondev.tech
         port: 80
         replicas: 2
         backend_port: 80
