@@ -12,7 +12,7 @@ environments:
         port: 80
         replicas: 2
         backend_port: 80
-        ssl: "false"
+        ssl: "true"
         deployment:
           method: rolling-upgrade
 #          active: blue
