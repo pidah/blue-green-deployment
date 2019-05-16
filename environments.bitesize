@@ -7,8 +7,8 @@ environments:
         application: nginx-green
         version: 2.0.0
         external_url:
-        - iie-web-us1-dev.bite.pearsondev.tech
         - idc-web-ar.dev-prsn.com
+        - iie-web-us1-dev.bite.pearsondev.tech
         port: 80
         replicas: 2
         backend_port: 80
